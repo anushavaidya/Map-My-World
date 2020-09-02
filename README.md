@@ -22,8 +22,8 @@ RTAB-Map (Real-Time Appearance-Based Mapping) is a popular solution for SLAM to 
 `sudo apt-get install ros-kinetic-move-base`
 * ROS amcl package \
 `sudo apt-get install ros-kinetic-amcl`
-* ROS rtabmap-ros package \
-`sudo apt-get install ros-kinetic-rtabmap-ros ` \
+* ROS rtabmap-ros package 
+`sudo apt-get install ros-kinetic-rtabmap-ros ` 
 
 
 ## How to run 
@@ -48,10 +48,8 @@ roslaunch my_robot mapping.launch`
 Send move command via teleop package to control your robot and observe real-time visualization in the environment rtabmapviz.
 `rtabmap-databaseViewer ~/.ros/rtabmap.db`
 
-View database Once you statisfied with your move, press Ctrl + c to exit then view your database with
-
-`rtabmap-databaseViewer ~/.ros/rtabmap.db`
-Remember to rename your ~/.ros/rtabmap.db before your next attempt since it will be deleted due to the launch file setting in mapping.launch
+ View database once you are statisfied with your move, press Ctrl + c to exit then view your database with `rtabmap-databaseViewer ~/.ros/rtabmap.db`
+ Remember to rename your ~/.ros/rtabmap.db before your next attempt since it will be deleted due to the launch file setting in mapping.launch
 
 
 
