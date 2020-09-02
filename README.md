@@ -22,28 +22,29 @@ RTAB-Map (Real-Time Appearance-Based Mapping) is a popular solution for SLAM to 
 `sudo apt-get install ros-kinetic-move-base`
 * ROS amcl package \
 `sudo apt-get install ros-kinetic-amcl`
-* ROS rtabmap-ros package
-`sudo apt-get install ros-kinetic-rtabmap-ros \`
+* ROS rtabmap-ros package \
+`sudo apt-get install ros-kinetic-rtabmap-ros ` \
 
 
 ## How to run 
-* Open Ubuntu bash and execute the command `sudo apt-get update && sudo apt-get upgrade -y`
+* Open Ubuntu bash and execute the command \
+`sudo apt-get update && sudo apt-get upgrade -y`
 * Install the necessary packages 
 * Clone this repository 
 * Open the repository and make \
-`cd /home/workspace/P3-Where-Am-I/catkin_ws/` \
+`cd /(your_directory}/catkin_ws/` \
 `catkin_make`
 * Launch my_robot in Gazebo to load both the world and plugins
 `roslaunch my_robot world.launch`
 * Launch teleop_twist_keyboard node, open a new terminal, enter
-`cd /home/workspace/RoboND-Term1-P4-Map-My-World/catkin_ws/
-source devel/setup.bash
-rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
+`cd /{your_directory}/catkin_ws/ \
+`source devel/setup.bash` \
+`rosrun teleop_twist_keyboard teleop_twist_keyboard.py``
 * Launch teleop_twist_keyboard node, open a new terminal, enter
-`cd /home/workspace/RoboND-Term1-P4-Map-My-World/catkin_ws/
+`cd /{your_directory}/catkin_ws/
 source devel/setup.bash
 roslaunch my_robot mapping.launch`
-* Testing
+* Testing: \
 Send move command via teleop package to control your robot and observe real-time visualization in the environment rtabmapviz.
 `rtabmap-databaseViewer ~/.ros/rtabmap.db`
 
@@ -56,4 +57,4 @@ Remember to rename your ~/.ros/rtabmap.db before your next attempt since it will
 
 
 # Note:
-* For more information on RTAB-Map package refer link [RTAB-Map](http://wiki.ros.org/rtabmap_ros).
+* For more information on RTAB-Map package refer [RTAB-Map](http://wiki.ros.org/rtabmap_ros).
